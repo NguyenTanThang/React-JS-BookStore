@@ -12,7 +12,7 @@ function CheckoutPage(props) {
   const { userInfo } = useSelector((state) => state.authReducer);
   const { loading, error, createdOrder } = useSelector((state) => state.addOrderReducer);
 
-  if (userInfo) {
+  if (!userInfo) {
     props.history.push("/signin");
   }
 
