@@ -18,13 +18,7 @@ export const getBookReviews = (bookID) => {
       type: GET_BOOK_REVIEWS_REQUEST,
     });
     try {
-      const { authReducer } = getState();
-      const { userInfo } = authReducer;
-      const { data } = await axios.get(`${REVIEW_URL}/bookID/${bookID}`, {
-        headers: {
-          ...generateAuthHeaders(userInfo),
-        },
-      });
+      const { data } = await axios.get(`${REVIEW_URL}/bookID/${bookID}`);
       dispatch({
         type: GET_BOOK_REVIEWS_SUCCESS,
         payload: data,
