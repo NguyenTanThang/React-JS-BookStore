@@ -42,8 +42,8 @@ function SignUpPage(props) {
 
   useEffect(() => {
     if (isSubmitted && !loading && !error) {
-      createNotification(`Your account has been created. Please visit ${email} for verfication`);
-      return props.history.push("/");
+      createNotification(`Your account has been created. Please login`);
+      return props.history.push("/signin");
     } else if (isSubmitted && !loading && error) {
       setIsSubmitted(false);
       createNotification(error, "error");
