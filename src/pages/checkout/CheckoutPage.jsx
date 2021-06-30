@@ -9,7 +9,12 @@ import { clearCart } from "../../actions/cartActions";
 function CheckoutPage(props) {
   const dispatch = useDispatch();
   const { cart } = useSelector((state) => state.cartReducer);
+  const { userInfo } = useSelector((state) => state.authReducer);
   const { loading, error, createdOrder } = useSelector((state) => state.addOrderReducer);
+
+  if (userInfo) {
+    props.history.push("/signin");
+  }
 
   if (cart.length === 0) {
     props.history.push("/browse");
