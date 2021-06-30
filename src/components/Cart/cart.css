@@ -1,0 +1,25 @@
+.cart-item .quantity-selector__container.row {
+    justify-content: space-between;
+    margin-right: 0;
+    align-items: center;
+    width: 150px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quantity-selector__container.row .increment {
+    margin-bottom: 3px;
+}
+
+.cart-item .total,
+.cart-item .price {
+    text-align: center;
+}
+
+.cart-item .content a h4 {
+    color: var(--primary-color);
+}
+
+.cart-item .content a:hover h4 {
+    color: #ad2626;
+}

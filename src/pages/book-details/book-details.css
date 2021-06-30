@@ -1,0 +1,166 @@
+/*Book Details*/
+#book-details-page__main {
+    border-bottom: 1px solid #eae8e4;
+}
+
+.book-details-main__image {
+    max-width: 35%;
+    width: 100%;
+    padding: 50px;
+    padding-left: 100px;
+    text-align: center;
+    border-right: 1px solid #eae8e4;
+}
+
+.book-details-main__content {
+    max-width: 60%;
+    width: 100%;
+    padding: 50px;
+    padding-right: 100px;
+}
+
+.book-details-main__content > * {
+    margin-bottom: 30px;
+}
+
+.book-details-main__content p.brief {
+    line-height: 2rem;
+}
+
+.quantity-selector__container {
+    border: 1px solid #eae8e4;
+    margin: 0;
+    padding: 0;
+    margin-right: 10px;
+    align-items: center;
+}
+
+.quantity-selector__container .quantity {
+    max-width: 60px;
+}
+
+.quantity-selector__container .quantity input {
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+}
+
+.quantity-selector__container .decrement,
+.quantity-selector__container .increment {
+    line-height: 20px;
+    font-size: 1.5rem;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+#book-details-page__description {
+
+}
+
+#book-details-page__description h2,
+#book-details-page__rec h2,
+#book-details-page__reviews h2 {
+    margin-bottom: 30px;
+}
+
+#book-details-page__description .container,
+#book-details-page__reviews .container {
+    max-width: 900px;
+}
+
+#book-details-page__description p {
+    line-height: 2rem;
+}
+
+#book-details-page__reviews {
+    border-top: 1px solid #eae8e4;
+    border-bottom: 1px solid #eae8e4;
+}
+
+.book-details-review__top {
+    margin-bottom: 50px;
+}
+
+.book-details-review__top .review-summary {
+    max-width: 40%;
+    width: 100%;
+}
+
+.book-details-review__top .review-form {
+    max-width: 60%;
+    width: 100%;
+}
+
+.book-details-review__top .review-form h4 {
+    margin-bottom: 10px;
+}
+
+.book-details-review__top .review-form .form-group {
+    margin-bottom: 10px;
+}
+
+.book-details-review__top .review-form .form-group label {
+    margin-bottom: 10px;
+}
+
+.book-details-review__main h4 {
+    margin-bottom: 50px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    .book-details-main__image {
+        max-width: 40%;
+        width: 100%;
+        padding: 50px;
+        padding-left: 50px;
+        padding-bottom: 0;
+        text-align: center;
+    }
+    
+    .book-details-main__content {
+        max-width: 60%;
+        width: 100%;
+        padding: 50px;
+        padding-right: 100px;
+    }
+
+    .quantity-selector .add-to-cart-button {
+        margin-top: 20px;
+    }
+  }
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .book-details-review__top .review-summary {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .book-details-review__top .review-form {
+        max-width: 100%;
+        width: 100%;
+    }
+    
+    .book-details-main__image {
+        max-width: 100%;
+        width: 100%;
+        padding: 50px;
+        padding-left: 50px;
+        padding-bottom: 0;
+        text-align: center;
+        border-right: none;
+    }
+    
+    .book-details-main__content {
+        max-width: 100%;
+        width: 100%;
+        padding: 50px;
+        padding-right: 100px;
+    }
+
+    .quantity-selector .add-to-cart-button {
+        margin-top: 20px;
+    }
+  }

@@ -1,0 +1,267 @@
+/*Header*/
+header {
+    background-color: #FFFFFF;
+    padding-top: 15px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #eae8e4;
+}
+
+header .row {
+    justify-content: space-between;
+}
+
+header .row .left li {
+    margin-right: 20px;
+}
+
+header .row .right {
+    margin-left: auto;
+}
+
+header .row .right li {
+    margin-left: 1rem;
+}
+
+header .row .right li * {
+    transition: all 0.3s ease;
+}
+
+header .row .right li a:hover * {
+    color: var(--primary-color);
+}
+
+header .cart-link {
+    position: relative; 
+    margin-bottom: 5px;
+}
+
+header .cart-link .badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: #000;
+    color: #FFF;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    line-height: 15px;
+    text-align: center;
+    font-size: 0.7rem;
+}
+
+/*Navbar*/
+nav {
+    background-color: #FFFFFF;
+    padding-top: 15px;
+    padding-bottom: 0;
+    border-bottom: 1px solid #eae8e4;
+}
+
+nav .container .row {
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .navbar-brand h1{
+    font-size: 2.4rem;
+}
+
+nav .nav-list .nav-item {
+    margin-left: 50px;
+}
+
+nav .nav-link {
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+nav .nav-item:hover .nav-link {
+    color: var(--primary-color);
+}
+
+nav .nav-button-open,
+nav .mobile-navbar {
+    display: none;
+}
+
+nav .mobile-navbar {
+    position: fixed;
+    top: 0;
+    left: -2000px;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 9999;
+    text-align: center;
+    padding-top: 150px;
+    transition: all 0.5s ease;
+    display: block;
+}
+
+nav .mobile-navbar .nav-button-open {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+nav .mobile-navbar .nav-item {
+    margin-left: 0;
+    margin-bottom: 50px;
+}
+
+nav .mobile-navbar .nav-item .nav-link {
+    font-size: 2rem;
+}
+
+nav .mobile-navbar.active {
+    left: 0;
+}
+
+/*Footer*/
+footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+    border-top: 1px solid #eae8e4;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    header .row .left li:first-child {
+        display: none;
+    }
+    
+    nav .right .nav-list {
+        display: none;
+    }
+
+    nav .nav-button-open {
+        display: block;
+    }
+}
+
+/*Ratings*/
+/*Star Widget*/
+.star-widget-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border: none;
+}
+
+.star-widget input {
+    display: none;
+}
+
+.star-widget label {
+    font-size: 30px;
+    color: #444;
+    padding: 10px;
+    float: right;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.star-widget input:not(:checked)~label:hover,
+.star-widget input:not(:checked)~label:hover~label {
+    color: var(--primary-color);
+}
+
+.star-widget input:checked~label {
+    color: var(--primary-color);
+}
+
+.star-widget input#rate-5:checked~label {
+    color: var(--primary-color);
+    text-shadow: 0 0 20px var(--primary-color);
+}
+
+#rate-1:checked~div header:before {
+    content: "I just hate it 😠";
+}
+
+#rate-2:checked~div header:before {
+    content: "I don't like it 😒";
+}
+
+#rate-3:checked~div header:before {
+    content: "It is awesome 😄";
+}
+
+#rate-4:checked~div header:before {
+    content: "I just like it 😎";
+}
+
+#rate-5:checked~div header:before {
+    content: "I just love it 😍";
+}
+
+.star-widget div {
+    display: none;
+}
+
+.star-widget input:checked~div {
+    display: block;
+}
+
+.star-widget div header {
+    width: 100%;
+    font-size: 25px;
+    color: var(--primary-color);
+    font-weight: 500;
+    margin: 5px 0 20px 0;
+    text-align: center;
+    transition: all 0.2s ease;
+    border: none;
+}
+
+/*Modification*/
+#browse-page #rate-1:checked~div header:before {
+    content: "1 star and above";
+}
+
+#browse-page #rate-2:checked~div header:before {
+    content: "2 stars and above";
+}
+#browse-page #rate-3:checked~div header:before {
+    content: "3 stars and above";
+}
+#browse-page #rate-4:checked~div header:before {
+    content: "4 stars and above";
+}
+#browse-page #rate-5:checked~div header:before {
+    content: "5 stars";
+}
+
+#browse-page .star-widget div header {
+    font-size: 20px;
+    margin-bottom: 0;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    nav .nav-list .nav-item {
+        margin-left: 2rem;
+    }
+
+    .star-widget label {
+        font-size: 25px;
+    }
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .star-widget label {
+        font-size: 30px;
+    }
+}
+
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}

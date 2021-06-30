@@ -1,13 +1,127 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+/*Ant Design Modification*/
+.ant-select:not(.ant-select-disabled):hover .ant-select-selector {
+    border-color: var(--primary-color) !important;
+    border-right-width: 1px !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*Star*/
+.ant-rate * {
+  font-size: 0.7rem;
+}
+
+/*Button*/
+  .ant-button.primary {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: #FFF;
+  }
+
+  .ant-button.primary span {
+    color: #FFF;
+  }
+  
+  .ant-button.primary:hover {
+    background-color: #fff;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+  }
+
+  .ant-button.primary:hover span {
+    color: var(--primary-color);
+  }
+
+  .ant-button.primary:active,
+  .ant-button.primary:focus{
+    background-color: #fff;
+    color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+  }
+
+  .ant-button.primary:active span,
+  .ant-button.primary:focus span{
+    color: var(--primary-color);
+  }
+
+/*Slider*/
+
+.ant-slider-track {
+    background-color: var(--primary-color) !important;
+}
+
+.ant-slider-handle {
+    border: 2px solid var(--primary-color) !important;
+}
+
+/*Pagination*/
+.pagination-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pagination-container .ant-pagination {
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ant-pagination li.ant-pagination-item {
+    background-color: #FFF;
+    border: 1px solid #000;
+}
+
+.ant-pagination li.ant-pagination-item:hover {
+    background-color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+}
+
+.ant-pagination li.ant-pagination-prev button,
+.ant-pagination li.ant-pagination-next button {
+    background-color: #FFF !important;
+    border: 1px solid #000 !important;
+    color: #000;
+}
+
+.ant-pagination li.ant-pagination-prev button:hover,
+.ant-pagination li.ant-pagination-next button:hover {
+    background-color: var(--primary-color) !important;
+    border: 1px solid var(--primary-color) !important;
+}
+
+.ant-pagination li.ant-pagination-prev button:hover svg,
+.ant-pagination li.ant-pagination-next button:hover svg {
+    fill: #fff;
+}
+
+.ant-pagination li.ant-pagination-item a {
+    color: #000;
+}
+
+.ant-pagination li.ant-pagination-item:hover a {
+    color: #fff;
+}
+
+.ant-pagination li.ant-pagination-item-active {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+}
+
+.ant-pagination li.ant-pagination-item-active a {
+    color: #fff;
+}
+
+/*==============================
+	Ant Tab
+==============================*/
+
+.ant-tabs-tab div {
+  color: #000;
+  text-transform: uppercase;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: var(--primary-color) !important;
+}
+
+.ant-tabs-ink-bar {
+  background-color:  var(--primary-color) !important;
 }

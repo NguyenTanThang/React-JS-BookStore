@@ -1,0 +1,35 @@
+.review-item {
+    margin-bottom: 30px;
+    border-bottom: 1px solid #eae8e4;
+    padding-bottom: 30px;
+}
+
+.review-item__header {
+    margin-bottom: 0;
+}
+
+.review-item__header h2 {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #161619;
+}
+
+.review-item__body {
+    margin-bottom: 30px;
+}
+
+.review-item__body p {
+    font-size: 1rem;
+    font-weight: 400;
+    color: #161619;
+    font-size: 0.9rem;
+}
+
+.review-item__footer {
+
+}
+
+.review-item__footer p {
+    color: #7f7f83;
+    font-size: 0.9rem;
+}

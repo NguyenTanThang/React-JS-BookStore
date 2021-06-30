@@ -1,0 +1,33 @@
+.auth-page {
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+#sign-in-page {
+    min-height: 70vh;
+}
+
+.auth-form-container {
+    flex: 1;
+}
+
+.auth-form-container .container {
+    max-width: 700px;
+    width: 100%;
+}
+
+.auth-form-container .form-group:last-child {
+    text-align: center;
+}
+
+.auth-form-container .form-group:last-child a {
+    display: inline-block;
+    margin-top: 20px;
+}
+
+.auth-form-container .form-group:last-child a:hover {
+    color: var(--primary-color);
+}

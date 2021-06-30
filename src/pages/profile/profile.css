@@ -1,0 +1,21 @@
+#profile-page table {
+    text-align: center;
+}
+
+#profile-page .profile-large {
+    display: block;
+}
+
+#profile-page .profile-mobile {
+    display: none;
+}
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    #profile-page .profile-large {
+        display: none;
+    }
+    
+    #profile-page .profile-mobile {
+        display: block;
+    }
+}

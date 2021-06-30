@@ -1,0 +1,60 @@
+/*Home Section Header*/
+.home-section-header {
+    margin-bottom: 20px;
+}
+.home-section-header .row {
+    justify-content: space-between;
+}
+
+/*Home Banner*/
+#home-banner {
+    min-height: 78.2vh;
+    background-image: url(https://assets.wallpapersin4k.org/uploads/2017/04/Penguin-Book-Cover-Wallpaper-9.jpg);
+    background-size: cover;
+    width: 100%;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#home-banner::after {
+    content: "";
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.home-banner__content {
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.home-banner__content h1 {
+    color: #FFF;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.home-banner__content h3 {
+    font-size: 2rem;
+    color: #FFF;
+    margin-bottom: 20px;
+}
+
+.home-banner__content h5 {
+    font-size: 1rem;
+    color: #FFF;
+    margin-bottom: 40px;
+}
+
+/*New Release*/
+#home-new-releases {
+    background-color: #FFF6F6;
+}
